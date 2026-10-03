@@ -1,0 +1,23 @@
+# 依赖与构建
+node_modules/
+backend/node_modules/
+dist/
+.venv/
+**/__pycache__/
+*.pyc
+
+# 本地数据与密钥
+.env
+backend/.env
+py_backend/.env
+py_backend/bailian.env
+backend/database.sqlite
+backend/uploads/
+py_backend/uploads/
+py_backend/outputs/
+*.sqlite
+
+# 系统
+.DS_Store
+.idea/
+.vscode/

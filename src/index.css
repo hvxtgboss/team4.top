@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Inter', 'Roboto', sans-serif;
+  background-color: #f7f8fa;
+  color: #1f2329;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 text-white px-4 py-2 rounded-lg font-medium transition-all hover:bg-primary-600 active:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary-500 border border-primary-500 px-4 py-2 rounded-lg font-medium transition-all hover:bg-primary-50 active:bg-primary-100;
+  }
+
+  .btn-outline {
+    @apply bg-white text-neutral-600 border border-neutral-200 px-4 py-2 rounded-lg font-medium transition-all hover:border-primary-500 hover:text-primary-500;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-neutral-100 p-4 transition-all hover:shadow-md;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 border border-neutral-200 rounded-lg focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all;
+  }
+
+  .progress-bar {
+    @apply h-1.5 bg-neutral-200 rounded-full overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-primary-400 to-primary-500 rounded-full transition-all duration-300;
+  }
+}

@@ -1,0 +1,53 @@
+# basic-skill / py_backend 依赖
+# 安装：
+#   cd py_backend && python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+# --- 可调用服务（app.py）---
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+python-multipart==0.0.20
+
+# --- 百炼应用 / ASR（bailian.py、paraformer.py）---
+dashscope==1.26.3
+python-dotenv==1.2.2
+
+# --- 七牛上传（QiniuUploader.py）---
+qiniu==7.18.0
+
+# --- 音频（Compressor.py 等）---
+pydub==0.25.1
+
+# --- HTTP / 工具 ---
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.1
+aiosignal==1.4.0
+annotated-doc==0.0.4
+anyio==4.14.2
+async-timeout==5.0.1
+attrs==26.1.0
+certifi==2026.6.17
+cffi==2.1.0
+charset-normalizer==3.4.9
+cryptography==49.0.0
+exceptiongroup==1.3.1
+frozenlist==1.8.0
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+httpx-sse==0.4.3
+idna==3.18
+markdown-it-py==4.2.0
+mdurl==0.1.2
+multidict==6.7.1
+propcache==0.5.2
+pycparser==3.0
+Pygments==2.20.0
+requests==2.34.2
+rich==15.0.0
+shellingham==1.5.4
+typer==0.27.0
+typing_extensions==4.16.0
+urllib3==2.7.0
+websocket-client==1.9.0
+yarl==1.24.2
