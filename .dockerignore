@@ -1,0 +1,16 @@
+node_modules
+backend/node_modules
+backend/database.sqlite
+backend/uploads
+dist
+.env
+.git
+*.md
+.DS_Store
+py_backend/.venv
+py_backend/__pycache__
+py_backend/.env
+py_backend/bailian.env
+py_backend/uploads
+py_backend/outputs
+docker/*.local
